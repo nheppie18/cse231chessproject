@@ -1,0 +1,1 @@
+#pragma once#include <iostream>#include "Piece.h"using namespace std;class TestPawn;class Pawn : protected Piece{public:	friend TestPawn;	Pawn(int col, int row, bool white);	char getLetter();	void display(gout);	int getMoves(board);};
